@@ -33,7 +33,7 @@ public class AutenticacionController {
 
             return  new LoginResponseDTO("00","",datosAlumnos[0],datosAlumnos[1]);
         } catch (Exception e) {
-            return new LoginResponseDTO("99", "Ocurrio un Problema", "", "");
+            return new LoginResponseDTO("99", "Ocurrio un Problema: " + e.getMessage(), "", "");
         }
 
     }
