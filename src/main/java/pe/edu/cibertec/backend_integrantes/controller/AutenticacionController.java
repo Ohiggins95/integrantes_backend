@@ -7,7 +7,7 @@ import pe.edu.cibertec.backend_integrantes.dto.IntegrantesResponseDTO;
 import pe.edu.cibertec.backend_integrantes.dto.LoginResponseDTO;
 import pe.edu.cibertec.backend_integrantes.dto.LoginResquestDTO;
 import pe.edu.cibertec.backend_integrantes.service.AutenticacionService;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.io.IOException;
 import java.util.List;
