@@ -13,13 +13,13 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
-@RequestMapping("/autenticacion")
+@RequestMapping("/")
 public class AutenticacionController {
 
     @Autowired
     AutenticacionService autenticacionService;
 
-    @PostMapping("/login")
+    @PostMapping("/")
     public LoginResponseDTO login(@RequestBody LoginResquestDTO loginResquestDTO) {
 
 
@@ -37,7 +37,7 @@ public class AutenticacionController {
 
     }
 
-    @GetMapping("/get-integrantes")
+    @GetMapping("/")
     public List<IntegrantesResponseDTO> getIntegrantes() throws IOException {
         List<IntegrantesResponseDTO> integrantes = autenticacionService.listarIntegrantes();
         return integrantes;
